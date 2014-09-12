@@ -1,0 +1,103 @@
+div[id^="edit-choice-"]
+/*
+Replaces:
+div#edit-choice-1-wrapper,
+div#edit-choice-3-wrapper,
+div#edit-choice-4-wrapper,
+div#edit-choice-5-wrapper,
+div#edit-choice-6-wrapper
+*/
+{
+  display:block;
+  margin-right:0px;
+  padding:0px;
+}
+div[id^="edit-choice-"]:nth-child(1)
+/*
+Replaces:
+div#edit-choice-1-wrapper
+*/
+{
+  background-image:url(/sites/all/modules/custom/handgunpoll/images/pd-handgun-cybergun.png);
+  background-repeat:no-repeat;
+  background-position:center top;
+  float:left;
+  width:310px;
+  height:230px;
+  margin-right:10px;
+  padding-bottom:10px;
+}
+div[id^="edit-choice-"]:nth-child(2)
+/*
+Replaces:
+div#edit-choice-3-wrapper
+*/
+{
+  background-image:url(/sites/all/modules/custom/handgunpoll/images/pd-handgun-glock.png);
+  background-repeat:no-repeat;
+  background-position:center top;
+  float:left;
+  width:310px;
+  height:230px;
+  margin-right:10px;
+  padding-bottom:10px;
+}
+div[id^="edit-choice-"]:nth-child(3)
+/*
+Replaces:
+div#edit-choice-4-wrapper
+*/
+{
+  background-image:url(/sites/all/modules/custom/handgunpoll/images/pd-handgun-daisy.png);
+  background-repeat:no-repeat;
+  background-position:center top;
+  float:left;
+  width:310px;
+  height:230px;
+  padding-bottom:10px;
+}
+div[id^="edit-choice-"]:nth-child(4)
+/*
+Replaces:
+div#edit-choice-5-wrapper
+*/
+{
+  background-image:url(/sites/all/modules/custom/handgunpoll/images/pd-handgun-all.png);
+  background-repeat:no-repeat;
+  background-position:center top;
+  float:left;
+  width:635px;
+  height:230px;
+  margin-right:10px;
+  padding-bottom:10px;
+}
+div[id^="edit-choice-"]:nth-child(5)
+/*
+Replaces:
+div#edit-choice-6-wrapper
+*/
+{
+  background-image:url(/sites/all/modules/custom/handgunpoll/images/pd-handgun-none.png);
+  background-repeat:no-repeat;
+  background-position:center top;
+  float:left;
+  width:310px;
+  height:230px;
+  padding-bottom:10px;
+}
+input[id^="edit-choice-"]
+/*
+Replaces:
+input#edit-choice-1,
+input#edit-choice-3,
+input#edit-choice-4,
+input#edit-choice-5,
+input#edit-choice-6
+*/
+{
+  margin-left:2px;
+  margin-top:220px;
+}
+input#edit-vote-binary-0{
+  display:block;
+}

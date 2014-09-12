@@ -1,0 +1,44 @@
+<?php
+/**
+ * Display help and module information
+ */
+
+function handgunpoll_help($path, $arg) {
+  $output = ''; // declare the output variable
+  switch ($path) {
+    case "admin/help#handgunpoll":
+      $output = '<p>' . t("Displays the handgun poll styles and actions for the polling feature for the Police Department quiz.") . '</p>';
+      break;
+  }
+  return $output;
+} // function handgunpoll_help
+
+/**
+ * Valid permissions for this module
+ * @return array An array of valid permissions for the handgunpoll modle
+ */
+ function handgunpoll_perm() {
+   return array('access handgunpoll content');
+ } // function handgunpoll_perm()
+
+  /*
+  * Add the CSS and JavaScript to the page
+  */
+function handgunpoll_init() {
+  global $node;
+  $handgunpoll_name = array();
+  $handgunpoll_name[] = 'content/2013/07/15/can-you-tell-which-handgun-real';
+  $handgunpoll_name[] = 'content/2013/06/21/can-you-tell-which-handgun-real';
+  $go = FALSE;
+  foreach ($handgunpoll_name as $value) {
+    if (substr($_REQUEST['q'], 0, strlen($value)) == $value) {
+      $go = TRUE;
+      break;
+    }
+  }
+  if ($go) {
+    drupal_add_css(drupal_get_path('module', 'handgunpoll') .'/handgunpoll.css');
+    drupal_add_js(drupal_get_path('module', 'handgunpoll') .'/handgunpoll.js');
+  }
+  return;
+}

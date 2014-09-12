@@ -1,0 +1,5 @@
+name = Handgun Poll
+description = Special styles and actions for the Handgun Poll for Police.
+core = 6.x
+package = OPuS
+dependencies[] = advpoll
